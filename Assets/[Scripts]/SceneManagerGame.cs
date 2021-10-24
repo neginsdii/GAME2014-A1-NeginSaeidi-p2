@@ -7,6 +7,11 @@ public class SceneManagerGame : MonoBehaviour
 {
     public void loadScene()
     {
+        if(tag=="Main")
+		{
+            Score.numOfBags = Score.maxnumOfBags;
+            ShieldsPanel.numOfSheilds = ShieldsPanel.MaxShields;
+		}
         SceneManager.LoadScene(tag);
     }
 

@@ -10,7 +10,8 @@ public class MoneyBags : MonoBehaviour
 
 		if (collision.gameObject.tag == "Player")
 		{
-			Score.numOfBags++;
+			if(Score.numOfBags>0)
+			Score.numOfBags--;
 			// gameObject.SetActive(false);
 			Destroy(this.gameObject);
 			Debug.Log("Collision");

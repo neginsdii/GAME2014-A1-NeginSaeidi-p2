@@ -11,19 +11,18 @@ public class BladeBehaviour : MonoBehaviour
 
     private BladeManager bladeManager;
     private Vector3 Velocity;
-    [SerializeField]
-    public GameObject target;
+    private GameObject target;
     // Start is called before the first frame update
     void Start()
     {
         bladeManager = GameObject.FindObjectOfType<BladeManager>();
-       
+        target = GameObject.FindGameObjectWithTag("Player");
+        Velocity = (target.transform.position - transform.position).normalized * Speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Velocity = (target.transform.position - transform.position).normalized * Speed;
 
         Move();
     }
@@ -35,6 +34,16 @@ public class BladeBehaviour : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-      //  bladeManager.ReturnBullet(this.gameObject);
+        if (collision.gameObject.tag == "Player")
+        {
+            bladeManager.ReturnBullet(this.gameObject);
+            if(ShieldsPanel.numOfSheilds>0)
+            ShieldsPanel.numOfSheilds--;
+        }
+        //if (collision.gameObject.tag == "Wall")
+        //{
+        //    bladeManager.ReturnBullet(this.gameObject);
+
+        //}
     }
 }

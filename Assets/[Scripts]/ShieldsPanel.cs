@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ShieldsPanel : MonoBehaviour
 {
-    public static int numOfSheilds = 2;
+    public static int numOfSheilds = 3;
     public static int MaxShields = 3;
 
     public Image[] shields;
@@ -27,6 +28,11 @@ public class ShieldsPanel : MonoBehaviour
 
             }
         }
+        if(numOfSheilds==0)
+		{
+            SceneManager.LoadScene("GameoverScene");
+        }
+
     }
 
    
