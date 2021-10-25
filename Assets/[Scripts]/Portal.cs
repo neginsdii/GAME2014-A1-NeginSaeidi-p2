@@ -1,3 +1,12 @@
+/*
+ * Full Name        : Negin Saeidi
+ * Student ID       : 101261395
+ * Date Modified    : October 20, 2021
+ * File             : Portal.cs
+ * Description      : This is the Portal script - changes the position of the player upon colliding with this object
+ * Version          : V02
+ * Revision History : Changed variable names, added comments
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

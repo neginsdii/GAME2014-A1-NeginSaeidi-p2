@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
         "name": "com.GBC.GAME2014A1NeginSaeidi",
-        "processId": 2898,
+        "processId": 3541,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,30 @@
             "deviceId": "emulator-5554",
             "name": "com.GBC.GAME2014A1NeginSaeidi",
             "processId": 2898,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.GBC.GAME2014A1NeginSaeidi",
+            "processId": 2945,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.GBC.GAME2014A1NeginSaeidi",
+            "processId": 3157,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.GBC.GAME2014A1NeginSaeidi",
+            "processId": 3315,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.GBC.GAME2014A1NeginSaeidi",
+            "processId": 3541,
             "exited": false
         }
     ],

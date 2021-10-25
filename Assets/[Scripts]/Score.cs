@@ -1,3 +1,12 @@
+/*
+ * Full Name        : Negin Saeidi
+ * Student ID       : 101261395
+ * Date Modified    : October 20, 2021
+ * File             : Score.cs
+ * Description      : This is the Score script - keep track of monetbags in the scene
+ * Version          : V02
+ * Revision History : Changed variable names, added comments
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +28,8 @@ public class Score : MonoBehaviour
     {
         scoreText.text = "Bags: " + numOfBags;
         if(numOfBags==0)
-		{
+        {
+            PlayerPrefs.SetInt("MoneyBags", Score.maxnumOfBags - Score.numOfBags);
             SceneManager.LoadScene("LevelEndScene");
         }
     }

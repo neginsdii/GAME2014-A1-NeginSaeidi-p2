@@ -18,7 +18,7 @@ public class SavaData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.SetInt("MoneyBags", Score.maxnumOfBags - Score.numOfBags);
+       
 
     }
 

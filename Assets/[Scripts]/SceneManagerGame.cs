@@ -2,8 +2,8 @@
  * Full Name        : Negin Saeidi
  * Student ID       : 101261395
  * Date Modified    : October 20, 2021
- * File             : SavaData.cs
- * Description      : This is the SavaData script - save the amoubt of bags collected by the player
+ * File             : SceneManagerGame.cs
+ * Description      : This is the SceneManagerGame script - Loads new scene
  * Version          : V02
  * Revision History : Changed variable names, added comments
  */

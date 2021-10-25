@@ -18,7 +18,11 @@ public class LoadData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MoneyBags.text ="Money Bags: "+ PlayerPrefs.GetInt("MoneyBags").ToString();
+        if (PlayerPrefs.HasKey("MoneyBags"))
+        {
+           
+            MoneyBags.text = "Money Bags: " + PlayerPrefs.GetInt("MoneyBags").ToString();
+        }
 
     }
 }
