@@ -1,3 +1,12 @@
+/*
+ * Full Name        : Negin Saeidi
+ * Student ID       : 101261395
+ * Date Modified    : October 20, 2021
+ * File             : BladeFactory.cs
+ * Description      : This is the blade Factory script - It instantiate the blades
+ * Version          : V02
+ * Revision History : Changed variable names, move function , added comments
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

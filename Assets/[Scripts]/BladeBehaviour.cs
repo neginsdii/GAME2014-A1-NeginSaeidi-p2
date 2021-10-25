@@ -1,3 +1,12 @@
+/*
+ * Full Name        : Negin Saeidi
+ * Student ID       : 101261395
+ * Date Modified    : October 20, 2021
+ * File             : BladeBehaviour.cs
+ * Description      : This is the blade behaviour script - It makes the blade moves towards the player
+ * Version          : V02
+ * Revision History : Changed variable names , added comments
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
